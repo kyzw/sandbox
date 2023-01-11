@@ -7,6 +7,6 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - .:/go/src/sandbox
-    tty: true
+    tty: true # persistence
     environment:
       - TZ=Asia/Tokyo
