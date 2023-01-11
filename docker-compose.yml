@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sandbox:
+    container_name: sandbox
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/go/src/sandbox
+    tty: true
+    environment:
+      - TZ=Asia/Tokyo
